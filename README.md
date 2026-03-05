@@ -40,6 +40,10 @@ By using the **Visitor Pattern**, we can add new promotional features (like `Tel
 Smart Data Usage Offer and price: 15 GB for ₱500
 Globe Data Usage Offer and price: 10 GB for ₱450
 Ditto Data Usage Offer and price: 8 GB for ₱400
+
+Smart unlimited calls and text package: No unlimited calls and text package
+Globe unlimited calls and text package: Unlimited calls and text to Globe network only
+Ditto unlimited calls and text package: Unlimited calls and text to all networks
 ```
 
 ## UML DIAGRAM
