@@ -1,13 +1,17 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class UnliCallTextPackage implements UnliCallOffer{
 
+    private static Map<String, String> telcoOfferMap = new HashMap<>();
+
+    static {
+        telcoOfferMap.put("Smart", "No unlimited calls and text package");
+        telcoOfferMap.put("Globe", "Unlimited calls and text to Globe network only");
+        telcoOfferMap.put("Ditto", "Unlimited calls and text to all networks");
+    }
+
     public String showUnliCallsTextOffer(String telcoName, boolean unliCallText){
-        if (telcoName.equals("Smart")) {
-            return "No unlimited calls and text package";
-        } else if (telcoName.equals("Globe")) {
-            return "Unlimited calls and text to Globe network only";
-        } else if (telcoName.equals("Ditto")) {
-            return "Unlimited calls and text to all networks";
-        }
-        return "";
+        return telcoOfferMap.getOrDefault(telcoName, "");
     }
 }
